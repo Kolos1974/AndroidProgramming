@@ -1,9 +1,8 @@
-package com.example.helloandandroiddemo
+package com.example.helloandroiddemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import com.example.helloandandroiddemo.databinding.ActivityMainBinding
+import com.example.helloandroiddemo.databinding.ActivityMainBinding
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
