@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Barkoba</string>
+    <string name="guess_button">Guess</string>
+    <string name="new_game">New game</string>
+    <string name="please_enter_your_guess">Please enter your guess!</string>
+    <string name="your_guess_number">Your guess number:</string>
+</resources>
