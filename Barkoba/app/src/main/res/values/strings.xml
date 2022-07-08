@@ -4,4 +4,10 @@
     <string name="new_game">New game</string>
     <string name="please_enter_your_guess">Please enter your guess!</string>
     <string name="your_guess_number">Your guess number:</string>
+    <string name="guess_is_higher">Your guess is higher</string>
+    <string name="guess_is_lower">Your guess is lower</string>
+    <string name="you_find_the_number">Congratulated! You find my number!!</string>
+    <string name="give_a_number">You must give a number!</string>
+    <string name="about">About this game</string>
+    <string name="field_is_wrong">This field is wrong:</string>
 </resources>

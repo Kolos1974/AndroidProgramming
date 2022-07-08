@@ -22,32 +22,39 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.btnGuess.setOnClickListener {
-            if (binding.etTextNumber.text.isNotEmpty()) {
+            try {
+                if (binding.etTextNumber.text.isNotEmpty()) {
 
-                guessNumber++
+                    guessNumber++
 
-                set_etResult()
+                    set_etResult()
 
-                if (num < binding.etTextNumber.text.toString().toInt()){
-                    Toast.makeText(this, "Your guess is higher",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    if (num < binding.etTextNumber.text.toString().toInt()) {
+                        Toast.makeText(
+                            this, getString(R.string.guess_is_higher),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+
+                    if (num > binding.etTextNumber.text.toString().toInt()) {
+                        Toast.makeText(
+                            this, getString(R.string.guess_is_lower),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+
+                    if (num == binding.etTextNumber.text.toString().toInt()) {
+                        Toast.makeText(
+                            this, getString(R.string.you_find_the_number),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+
+                } else {
+                    binding.etTextNumber.error = getString(R.string.give_a_number)
                 }
-
-                if (num > binding.etTextNumber.text.toString().toInt()){
-                    Toast.makeText(this, "Your guess is lower",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-
-                if (num == binding.etTextNumber.text.toString().toInt()){
-                    Toast.makeText(this, "Congratulated! You find my number!!",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }
-
-            } else {
-                binding.etTextNumber.error = "Meg kell adni egy számot!"
+            } catch (e: Exception) {
+                binding.etTextNumber.error = getString(R.string.field_is_wrong) + "${e.message}"
             }
         }
 
@@ -66,8 +73,18 @@ class MainActivity : AppCompatActivity() {
         binding.etTextNumber.text.clear()
     }
 
-    private fun set_etResult(){
+    private fun set_etResult() {
         binding.etResult.text = "Your guess number: $guessNumber"
+    }
+
+
+    // Nem használatos, hogy a gomb eseményét összekötjük a függvénynel.
+    // Helyette kódból a binding hivatkozást használjuk!!
+    fun btnAboutClick(view: View) {
+        Toast.makeText(
+            this, getString(R.string.about),
+            Toast.LENGTH_LONG
+        ).show()
     }
 
 
