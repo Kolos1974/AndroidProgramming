@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginLayout</string>
+    <string name="welcome">WELCOME</string>
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+    <string name="about">ABOUT</string>
+    <string name="help">HELP</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+</resources>
