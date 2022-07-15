@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BmiCalculator</string>
+    <string name="weight">Weight</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="calculate">Calculate</string>
+    <string name="weightValue">80</string>
+    <string name="minus">Minus</string>
+    <string name="plus">Plus</string>
+</resources>
