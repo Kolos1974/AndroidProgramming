@@ -7,7 +7,7 @@ import com.example.layoutinflaterwithbindingdemo.databinding.NoteRowBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var bindingNoteRow: NoteRowBinding
+    // private lateinit var bindingNoteRow: NoteRowBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,16 +19,14 @@ class MainActivity : AppCompatActivity() {
         binding.btnSave.setOnClickListener{
             // var newNoteView = layoutInflater.inflate(R.layout.note_row, null)
 
-            bindingNoteRow = NoteRowBinding.inflate(layoutInflater)
-            bindingNoteRow.tvData.text = binding.etNote.toString()
+            var bindingNoteRow = NoteRowBinding.inflate(layoutInflater)
+            bindingNoteRow.tvData.text = binding.etNote.text.toString()
 
             bindingNoteRow.btnDel.setOnClickListener{
-//                A paramétert kell meghatározni!
-//                binding.layoutMain.removeView()
+                binding.layoutMain.removeView(bindingNoteRow.root)
             }
-//            A paramétert kell meghatározni!
-//            binding.layoutMain.addView()
 
+            binding.layoutMain.addView(bindingNoteRow.root)
         }
 
 
