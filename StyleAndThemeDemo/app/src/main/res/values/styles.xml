@@ -1,7 +1,0 @@
-<resources>
-    <style name="MyTextStyle">
-        <item name="android:textSize">26sp</item>
-        <item name="android:textColor">#E91E63</item>
-    </style>
-
-</resources>

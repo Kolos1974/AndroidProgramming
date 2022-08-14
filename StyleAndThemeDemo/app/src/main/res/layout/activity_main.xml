@@ -11,17 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
-        style="@style/MyTextStyle" />
+        android:theme="@style/MyTextStyle"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Style set at local!"
-        style="@style/MyTextStyle" />
+        android:theme="@style/MyTextStyle"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Style set from theme!!"
-        style="@style/MyTextStyle" />
+        android:theme="@style/MyTextStyle"/>
 </LinearLayout>
