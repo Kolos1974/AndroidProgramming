@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AndWallet</string>
+    <string name="action_add_item">Add item</string>
+    <string name="action_delete_all">Delete all</string>
+    <string name="action_exit">Exit</string>
+    <string name="rbtnExpense">Expense</string>
+    <string name="rbtnIncome">Income</string>
+    <string name="etDetail">Enter details here</string>
+    <string name="etPrice">Enter price here</string>
+    <string name="tvAppName">AndWallet</string>
+    <string name="tvSentence">This view shows your current balance:</string>
+    <string name="tvIncomeText">Income</string>
+    <string name="tvExpenseText">Expensive</string>
+    <string name="tvBalanceText">Balance</string>
+    <string name="etNumberPasswordText">Enter here your PIN</string>
+    <string name="tvBalance">Balance</string>
+    <string name="btnSumma">SUMMA</string>
+    <string name="wrong_password">The password is wrong!</string>
+    <string name="activity_not_implemented">The Activity is not implementing the TodoHandler interface.</string>
+</resources>
